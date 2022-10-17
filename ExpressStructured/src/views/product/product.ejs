@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/test/product/product.css">
+    <link rel="stylesheet" href="/test2/product/product2.css">
+    
+    <!-- <link rel="stylesheet" href="/product.css"> -->
+    
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>product page</h1>
+    <!-- variable declaration -->
+    <% let add = 'Delhi' %> 
+    <% let resident = 'Delhi resident' %> 
+    <% let out = 'outside Delhi' %> 
+
+    <!-- if else -->
+    <% if(add === 'Delhi'){ %> 
+       <h4> <%= resident %> </h4>
+    <% } else { %> 
+        <%= out %>
+    <% } %> 
+
+
+    <!-- function -->
+    <% function calculateAdd(a, b){ %> 
+        <% return a+b %> 
+    <% } %> 
+
+    <h3><%= calculateAdd(10,20) %> </h3> 
+
+    <!-- for loop -->
+
+    <% if(data.length){ %> 
+        <% data.forEach((el) => { %>
+        <h3> <%= el.userId %> </h3> 
+        <h3> <%= el.title %> </h3> 
+        <% }) %> 
+    <% }else { %> 
+        <h3><%= error %></h3>
+    <% } %> 
+
+
+
+
+
+    <!-- forEach -->
+
+    <!-- For of -->
+
+    <!-- While loop -->
+
+
+
+
+    
+
+
+
+
+ 
+</body>
+</html>
+
+
+
+
+<!-- let a = 10
+
+let b = 20
+
+console.log(a)
+
+if(add === 'Delhi'){
+   Delhi resident
+} else {
+    outsider
+} -->
+
+<!-- function printName(){
+    return 'Abhinav'
+}
+
+PrintName() -->
+
+<!-- for(let i = 0; i<10; i++){
+    log(i)
+} -->
+
+let data = []
+
+<% data.forEach((el) => { %>
+    data.push(`<h3> <%= el.userId %> </h3> 
+    <h3> <%= el.title %> </h3> `)
+ <% }) %> 
+
+
+
+ <div>{[1,2,3,4,5]}</div>
